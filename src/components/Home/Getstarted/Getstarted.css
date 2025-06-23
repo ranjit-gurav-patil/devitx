@@ -1,0 +1,178 @@
+.marquee {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 40px;
+      color: gainsboro;
+}
+
+.marquee__inner {
+  display: flex;
+  width: fit-content;
+  animation: marquee 20s linear infinite;
+  align-items: center;
+}
+
+.marquee__item {
+  flex: 0 0 auto;
+  padding: 0 40px;
+  font-size: 1.2rem;
+  white-space: nowrap;
+}
+
+/* Animation keyframes */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.f-plan {
+  background: linear-gradient(145deg, rgba(var(--container--gradient-color--rgb), 0.12), rgba(var(--container--gradient-color--rgb), 0.06));
+  backdrop-filter: blur(24px);
+  border-radius: 16px;
+  padding: 2rem;
+  color: #fff;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+
+.f-plan h3 {
+  color: var(--header--color);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.f-plan__description {
+  color: #cbd3ff;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.f-plan__features li {
+  color: rgba(255, 255, 255, 0.85);
+  padding-left: 1.2rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.f-plan__features li:before {
+  content: '–';
+  position: absolute;
+  left: 0;
+  color: var(--line--color);
+}
+
+.f-status {
+  background: var(--line--color);
+  color: #fff;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.75rem;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.f-plan__price {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.f-plan__button {
+  background: var(--header--color);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  transition: background 0.3s ease;
+  width: 100%;
+  box-shadow: 0 8px 16px rgba(var(--container--gradient-color--rgb), 0.3);
+}
+
+.f-plan__button:hover {
+  background: rgba(var(--container--gradient-color--rgb), 1);
+}
+
+.f-plan--web-development {
+  --header--color: var(--f--color--web-development) !important;
+  --line--color: var(--f--color--web-development) !important;
+  --container--gradient-color--rgb: var(--f--color--web-development--rgb) !important;
+}
+
+.f-plan--app-development {
+  --header--color: var(--f--color--app-development) !important;
+  --line--color: var(--f--color--app-development) !important;
+  --container--gradient-color--rgb: var(--f--color--app-development--rgb) !important;
+}
+
+.f-plan--blockchain-development {
+  --header--color: var(--f--color--blockchain-development) !important;
+  --line--color: var(--f--color--blockchain-development) !important;
+  --container--gradient-color--rgb: var(--f--color--blockchain-development--rgb) !important;
+}
+
+.f-plan--data-ai {
+  --header--color: var(--f--color--data-ai) !important;
+  --line--color: var(--f--color--data-ai) !important;
+  --container--gradient-color--rgb: var(--f--color--data-ai--rgb) !important;
+}
+
+.f-plan--ui-ux-design {
+  --header--color: var(--f--color--ui-ux-design) !important;
+  --line--color: var(--f--color--ui-ux-design) !important;
+  --container--gradient-color--rgb: var(--f--color--ui-ux-design--rgb) !important;
+}
+
+.f-plan--support-maintenance {
+  --header--color: var(--f--color--support-maintenance) !important;
+  --line--color: var(--f--color--support-maintenance) !important;
+  --container--gradient-color--rgb: var(--f--color--support-maintenance--rgb) !important;
+}
+
+.f-plan--cloud-devops {
+  --header--color: var(--f--color--cloud-devops) !important;
+  --line--color: var(--f--color--cloud-devops) !important;
+  --container--gradient-color--rgb: var(--f--color--cloud-devops--rgb) !important;
+}
+
+.f-plan--consulting-strategy {
+  --header--color: var(--f--color--consulting-strategy) !important;
+  --line--color: var(--f--color--consulting-strategy) !important;
+  --container--gradient-color--rgb: var(--f--color--consulting-strategy--rgb) !important;
+}
+.f-plan--startup-consultation {
+  --header--color: var(--f--color--startup-consultation) !important;
+  --line--color: var(--f--color--startup-consultation) !important;
+  --container--gradient-color--rgb: var(--f--color--startup-consultation--rgb) !important;
+}
+:root {
+  --f--color--web-development: #1e88e5;
+  --f--color--web-development--rgb: 30, 136, 229;
+  --f--color--app-development: #43a047;
+  --f--color--app-development--rgb: 67, 160, 71;
+  --f--color--blockchain-development: #6d4c41;
+  --f--color--blockchain-development--rgb: 109, 76, 65;
+  --f--color--data-ai: #8e24aa;
+  --f--color--data-ai--rgb: 142, 36, 170;
+  --f--color--ui-ux-design: #ff7043;
+  --f--color--ui-ux-design--rgb: 255, 112, 67;
+  --f--color--support-maintenance: #78909c;
+  --f--color--support-maintenance--rgb: 120, 144, 156;
+  --f--color--cloud-devops: #00acc1;
+  --f--color--cloud-devops--rgb: 0, 172, 193;
+  --f--color--consulting-strategy: #fbc02d;
+  --f--color--consulting-strategy--rgb: 251, 192, 45;
+ --f--color--startup-consultation: #5c6bc0;
+--f--color--startup-consultation--rgb: 92, 107, 192;
+}

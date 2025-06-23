@@ -1,0 +1,89 @@
+.footer-glow {
+ background: linear-gradient(135deg, #000126, #02032e, #000127);
+  padding: 2rem;
+  color: #fff;
+}
+
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.footer-video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 0;
+  object-fit: cover;
+  opacity: 0.3; /* Adjust for fade effect */
+}
+
+.footer-content {
+  position: relative;
+  z-index: 1;
+  padding: 3rem 2rem;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-column {
+  flex: 1 1 30%;
+  min-width: 250px;
+}
+
+.footer-logo {
+  max-width: 150px;
+  opacity: 0.2;
+  margin-bottom: 1rem;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  background: #f5f3f20d;
+}
+
+.newsletter-form input {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.newsletter-form button {
+  padding: 10px;
+  border: none;
+  background-color: #524c70;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.social-embed {
+  background-color: #222;
+  padding: 10px;
+  border-radius: 8px;
+  height: 250px;
+  overflow: hidden;
+}
+
+.social-icons svg {
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+  transition: fill 0.3s ease;
+}
+
+.social-icons a:hover svg {
+  fill: #1da1f2;
+}
+
+.footer-container h4 {
+ font-size: 22px;
+}
